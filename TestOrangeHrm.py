@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 
-driver = webdriver.Chrome(executable_path="/Users/echalo/automation/phptravels/Browsers/chromedriver")
+driver = webdriver.Chrome(executable_path="/Users/echalo/automation/AutomationPractise/drivers/chromedriver")
 
 driver.get("https://opensource-demo.orangehrmlive.com")
 
