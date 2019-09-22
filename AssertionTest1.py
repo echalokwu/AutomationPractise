@@ -26,7 +26,8 @@ class Test(unittest.TestCase):
 
     def testName2(self):
         list = {"python", "selenium", "java"}
-        self.assertIn("python", list)
+        # self.assertIn("python", list)
+        self.assertNotIn("ruby", list)
 
 
 if __name__ == "__main__":
