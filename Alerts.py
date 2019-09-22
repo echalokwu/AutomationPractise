@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 
-driver = webdriver.Chrome(executable_path="/Users/echalo/automation/phptravels/Browsers/chromedriver")
+driver = webdriver.Chrome(executable_path="/Users/echalo/automation/AutomationPractise/drivers/chromedriver")
 
 driver.get("https://testautomationpractice.blogspot.com/")
 

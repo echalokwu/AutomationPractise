@@ -17,7 +17,7 @@ class OrangeHRMTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome(executable_path="/Users/echalo/automation/phptravels/Browsers/chromedriver")
+        cls.driver = webdriver.Chrome(executable_path="/Users/echalo/automation/AutomationPractise/drivers/chromedriver")
         cls.driver.maximize_window()
 
     def test_homePageTitle(self):
