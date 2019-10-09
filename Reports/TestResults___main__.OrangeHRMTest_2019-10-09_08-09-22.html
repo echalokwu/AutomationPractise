@@ -11,8 +11,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2019-09-19 21:48:06</p>
-                <p class='attribute'><strong>Duration: </strong>0 ms</p>
+                <p class='attribute'><strong>Start Time: </strong>2019-10-09 08:09:22</p>
+                <p class='attribute'><strong>Duration: </strong>7.79 s</p>
                 <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
             </div>
         </div>
@@ -21,14 +21,14 @@
                 <table class='table table-hover table-responsive'>
                     <thead>
                         <tr>
-                            <th>setUpClass (__main__</th>
+                            <th>__main__.OrangeHRMTest</th>
                             <th>Status</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class='warning'>
-                            <td class="col-xs-10">OrangeHRMTest)</td>
+                            <td class="col-xs-10">test_case_02</td>
                             <td class="col-xs-1">
                                 <span class="label label-warning" style="display:block;width:40px;">Error</span>
                             </td>
@@ -37,28 +37,28 @@
                             </td>
                         </tr>
                         <tr style="display:none;">
-                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 75
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=77.0.3865.90)
 </p><p style="color:maroon;">Traceback (most recent call last):
-  File "/Users/echalo/automation/AutomationPractise/Test_orange_hrm_logintest.py", line 10, in setUpClass
-    cls.driver = webdriver.Chrome(executable_path="/Users/echalo/automation/phptravels/Browsers/chromedriver")
-  File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
-    desired_capabilities=desired_capabilities)
-  File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/Users/echalo/automation/AutomationPractise/Test_orange_hrm_logintest.py", line 48, in test_case_02
+    self.driver.find_element_by_xpath("//a[text()='Logout']").click()
+  File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
   File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
   File "/Users/echalo/automation/AutomationPractise/venv/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 75
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=77.0.3865.90)
 
 </p>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 1, Pass: 0, Error: 1 -- Duration: 0 ms
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 7.79 s
                             </td>
                         </tr>
                     </tbody>
